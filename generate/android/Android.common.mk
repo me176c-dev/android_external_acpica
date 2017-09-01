@@ -1,0 +1,8 @@
+LOCAL_C_INCLUDES += \
+	$(LOCAL_PATH)/$(ACPICA_INCLUDE) \
+	$(LOCAL_PATH)/$(ACPICA_INCLUDE)/platform
+
+LOCAL_CFLAGS += \
+	-Wno-unused-parameter
+
+include $(BUILD_HOST_EXECUTABLE)
